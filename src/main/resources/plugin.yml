@@ -1,0 +1,4 @@
+name: CreeperBombModifer
+version: '${project.version}'
+main: org.hotal.creeperbombmodifer.CreeperBombModifer
+api-version: 1.19
