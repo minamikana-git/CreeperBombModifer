@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class CreeperBombModifer extends JavaPlugin implements Listener {
 
-    private double explosionRadius = 5.0; // 爆発範囲のデフォルト値
+    private double explosionRadius = 5.0; // 爆発範囲のデフォルト値。ここを変更することが出来る。
 
     @Override
     public void onEnable() {
@@ -22,7 +22,7 @@ public class CreeperBombModifer extends JavaPlugin implements Listener {
             event.setCancelled(true); // 爆発をキャンセル
 
             // 爆発範囲を変更
-            double modifiedRadius = explosionRadius * 10; // 例えば、デフォルト値の2倍にする
+            double modifiedRadius = explosionRadius * 10; // 例えば、デフォルト値の2倍にする。100ではメモリ8GBだと鯖落ちするので注意。
             creeper.getWorld().createExplosion(creeper.getLocation(), (float) modifiedRadius);
         }
     }
