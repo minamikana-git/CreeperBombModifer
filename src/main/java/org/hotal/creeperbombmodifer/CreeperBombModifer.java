@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class CreeperBombModifer extends JavaPlugin implements Listener {
 
-    private double explosionRadius = 20.0; // 爆発範囲のデフォルト値
+    private double explosionRadius = 5.0; // 爆発範囲のデフォルト値
 
     @Override
     public void onEnable() {
